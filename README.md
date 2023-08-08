@@ -1,5 +1,7 @@
 # Калькулятор UI
 
+[Live Demo](https://butyrskiy.github.io/calculator-UI/)
+
 Простой калькулятор, выполняющий 4 арифметических действия:
 
 - сложение
