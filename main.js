@@ -16,12 +16,14 @@ function outputResult(e) {
 
   const result = calc(num1, num2, operator);
 
+  output.classList.add('result-color');
+
   if(Number.isInteger(result)) {
     output.textContent = result;
     addResultToHistory(result);
   } else {
-    output.textContent = result.toFixed(2);
-    addResultToHistory(result.toFixed(2));
+    output.textContent = result.toFixed(3);
+    addResultToHistory(result.toFixed(3));
   }
 }
 

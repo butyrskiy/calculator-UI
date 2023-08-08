@@ -1,64 +1,89 @@
-.container {
+body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  width: 600px;
-  height: 320px;
-  margin: 0 auto;
-  margin-top: 35px;
-  background-color: #d9d9d9;
-  border: 1px solid #000;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: textfield;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #a4bac9;
+}
+
+.title {
+  font-size: 35px;
+  color: #e1e1e1;
+  margin-bottom: 25px;
 }
 
 .calc_wrapper {
+  padding: 45px 45px;
+  margin-bottom: 20px;
+  background-color: #7b888a;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  padding-top: 125px;
+  border-radius: 10px;
 }
 
 .input-1 {
-  width: 80px;
-  height: 25px;
-  font-size: 14px;
+  max-width: 100px;
+  padding: 5px 10px;
+  font-size: 21px;
+  text-align: center;
   margin-right: 20px;
-  padding-left: 10px;
-}
-
-.input-2 {
-  width: 80px;
-  height: 25px;
-  font-size: 14px;
-  margin-right: 15px;
-  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 .select-operator {
-  width: 30px;
-  height: 25px;
-  margin-right: 15px;
+  margin-right: 20px;
+  width: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-2 {
+  max-width: 100px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 21px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
 }
 
 .result-btn {
-  width: 30px;
-  height: 25px;
+  width: 40px;
+  height: 30px;
   margin-right: 15px;
-}
-
-.output {
-  width: 55px;
-  height: 35px;
+  font-size: 21px;
+  border-radius: 5px;
+  border: none;
 }
 
 .output-value {
-  margin: 0;
-  padding-top: 6px;
-  padding-bottom: 4px;
-  text-align: center;
-  border: 1px solid black;
-
-  font-size: 17px;
-  background-color: #ddf1d3;
+  padding: 5px 10px;
+  font-size: 23px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
 }
 
 .history {
@@ -69,17 +94,24 @@
 }
 
 .history-result {
+  min-width: 220px;
+  min-height: 75px;
+  padding: 10px;
+  font-size: 15px;
+  color: #818181;
+  background-color: #e0f3f3;
   overflow: scroll;
-  width: 150px;
-  height: 85px;
-  background-color: #fff;
-  margin-left: 108px;
-  margin-top: 5px;
-  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .history-item {
-  font-size: 14px;
+  font-size: 19px;
   margin: 5px;
+  margin-left: 0;
+  color: #474747;
   cursor: pointer;
+}
+
+.result-color {
+  background-color: #c4ff69;
 }
