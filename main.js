@@ -1,19 +1,11 @@
+import { calc } from "./modules/math.js";
+
 const form = document.querySelector('form');
 const firstInput = document.querySelector('.input-1');
 const secondInput = document.querySelector('.input-2');
 const operatorNode = document.querySelector('.select-operator');
-const resultBtn = document.querySelector('.result-btn');
 const output = document.querySelector('.output-value');
 const historyBox = document.querySelector('.history-result');
-
-function calc(a, b, operator) {
-  switch(operator) {
-    case '+': return a + b;
-    case '-': return a - b;
-    case '*': return a * b;
-    case '/': return a / b;
-  }
-}
 
 function outputResult(e) {
   e.preventDefault();
